@@ -1,0 +1,16 @@
+image: jelaniwoods/appdev2021-very-best-debug@sha256:ba0e76c9121412ee5366011b090740c21538c1c19ffc29929c66372d1eaa0984
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+    visibility: public
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - wingrunr21.vscode-ruby
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify
