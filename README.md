@@ -15,7 +15,7 @@ Here is the [target app](http://very-best-debug.matchthetarget.com/)
   1. Once you have `/users` working correctly, check the routes file and get each working the same as the target
   1. Run `rails grade` once all the routes are working to see what else still does not match the target
  1. As you work, remember to navigate to `/git` and **commit often as you work.**
- 1. Run `rails grade` as often as you like to see how you are doing, but **make sure you test your app manually first to make sure it matches the target's behavior first**.
+ 1. **Be sure you test the behavior of your app manually to make sure it matches the target's behavior**. Don't use `rails grade` to debug.
 
 ## Specs
 <details>
