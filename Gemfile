@@ -9,7 +9,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
-gem "faker"
+
 # Use Active Model has_secure_password
 gem 'bcrypt'
 
@@ -30,6 +30,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 gem 'rack-timeout', require: 'rack/timeout/base'
 gem 'sprockets', '< 4'
 gem 'sassc-rails'
@@ -43,7 +46,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'sqlite3', '~> 1.4.1'
   gem 'table_print'
-  gem 'web_git', github: 'firstdraft/web_git', branch: 'spring2020'
+  gem 'web_git', github: 'firstdraft/web_git'
 end
 
 group :development do
